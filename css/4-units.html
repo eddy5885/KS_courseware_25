@@ -1,0 +1,54 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>选择器</title>
+  </head>
+  <style>
+    /* 
+# CSS 有几种表示长度的不同单位。
+许多 CSS 属性接受"长度"值，诸如 width、margin、padding、font-size 等。
+长度是一个后面跟着长度单位的数字，诸如 10px、2em 等。
+数字和单位之间不能出现空格。但是，如果值为 0，则可以省略单位。
+
+
+## 绝对长度 px
+## 相对长度 em rem vw vh %
+
+### em :相对于元素的字体大小（font-size）（2em 表示当前字体大小的 2 倍）	
+
+*/
+    html {
+      font-size: 10px;
+    }
+    .p1,
+    .p2 {
+      width: 300px;
+      height: 100px;
+      font-size: 20px;
+    }
+    .p21 {
+      font-size: 1.2em;
+    }
+    .p22 {
+      font-size: 1.2rem;
+    }
+    .p23 {
+      width: 50vw;
+    }
+    .p24 {
+      font-size: 150%;
+    }
+  </style>
+  <body>
+    <p class="p1">绝对长度</p>
+
+    <div class="p2">
+      <p class="p21">相对长度21</p>
+      <p class="p22">相对长度22</p>
+      <p class="p23">相对长度23</p>
+      <p class="p24">相对长度24</p>
+    </div>
+  </body>
+</html>

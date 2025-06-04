@@ -1,0 +1,43 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>float</title>
+  </head>
+  <style>
+    body {
+      margin: 0;
+    }
+    .container {
+      height: 100vh;
+      background: #ccc;
+      overflow: hidden; /* 清除浮动 */
+    }
+    .top {
+      height: 50px;
+      width: 100%;
+      background: #aaa;
+    }
+    .leftbar {
+      float: left;
+      width: 200px;
+      height: 100vh;
+      background: #f1f1f1;
+    }
+    .main{
+      margin-left: 200px;
+      /* height: 100vh; */
+      background: #ddd;
+    }
+  </style>
+
+  <body>
+
+    <div class="container">
+      <div class="top"></div>
+      <div class="leftbar">这里是导航</div>
+      <div class="main">这里是主要内容</div>
+    </div>
+  </body>
+</html>

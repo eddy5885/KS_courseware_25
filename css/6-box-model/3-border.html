@@ -1,0 +1,43 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>边框</title>
+  </head>
+  <style>
+    /* 
+    三要素：宽度 颜色 样式
+    */
+    .border1 {
+      border: 10px solid red; /* 10px 宽度 solid 样式 red 颜色 */
+    }
+
+    /* 
+    可以分别设置四边
+    */
+    .border2 {
+      border-left: 10px solid red; /* 10px 宽度 solid 样式 red 颜色 */
+      border-right: 10px solid red; /* 10px 宽度 solid 样式 red 颜色 */
+
+      border-top: 10px solid green; /* 10px 宽度 solid 样式 red 颜色 */
+      border-bottom: 10px solid green; /* 10px 宽度 solid 样式 red 颜色 */
+    }
+
+    /* 
+    可分别设置四边的宽度、颜色、样式
+    */
+    .border3 {
+      border-top-color: blue;
+      border-top-style: double;
+      border-top-width: 3px;
+    }
+  </style>
+  <body>
+    <div class="border1">边框</div>
+    <hr />
+    <div class="border2">边框</div>
+    <hr />
+    <div class="border3">边框</div>
+  </body>
+</html>

@@ -1,0 +1,50 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>选择器</title>
+  </head>
+  <style>
+    /* 
+# 我们可以将 CSS 选择器分为五类:
+
+简单选择器（根据名称、id、类来选取元素）
+组合器选择器（根据它们之间的特定关系来选取元素）
+伪类选择器（根据特定状态选取元素）
+伪元素选择器（选取元素的一部分并设置其样式）
+属性选择器（根据属性或属性值来选取元素）
+*/
+
+    /* 
+## 简单选择器
+*/
+    .p1 {
+      color: red;
+    }
+
+    #p2 {
+      color: blue;
+    }
+
+    p {
+      color: green;
+    }
+
+    * {
+      color: black;
+    }
+    /* 
+##四种不同的组合器:
+后代选择器 (空格)
+子选择器 (>)
+相邻兄弟选择器 (+)
+通用兄弟选择器 (~)
+*/
+  </style>
+  <body>
+    <p class="p1">这是第一行</p>
+    <p id="p2">这是第二行</p>
+    <p>这是第三行</p>
+  </body>
+</html>

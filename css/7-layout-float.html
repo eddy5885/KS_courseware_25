@@ -1,0 +1,58 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>语法</title>
+  </head>
+  <style>
+    .d1,
+    .d2,
+    .d3 {
+      height: 100px;
+    }
+
+    .d1 {
+      background-color: red;
+    }
+
+    .d2 {
+      background-color: green;
+    }
+
+    .d3 {
+      background-color: blue;
+    }
+
+    .container {
+      /* overflow: hidden;  */
+    }
+
+    .container::after {
+      content: "";
+      clear: both;
+      display: table;
+    }
+    .f {
+      float: left;
+    }
+  </style>
+
+  <body>
+    <pre>
+浮动可以让元素脱离文档流，但是又不像绝对定位那种，虽然脱离了文档流，但是并不会覆盖文字，文字会围绕着图片排版。浮动能让块级元素水平排列。</pre
+    >
+    <div class="d1"></div>
+    <div class="d2"></div>
+    <div class="d3"></div>
+    <hr />
+    <div class="container">
+      <div class="d1 f">d1</div>
+      <div class="d2 f">d2</div>
+      <div class="d3 f">d3</div>
+    </div>
+
+    <div>这是标题</div>
+    <pre>浮动带来的问题</pre>
+  </body>
+</html>
