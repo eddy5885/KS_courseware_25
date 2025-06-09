@@ -1,0 +1,11 @@
+{
+  "name": "config",
+  "version": "1.0.0",
+  "exports": {
+    ".": {
+      "import": "./config.mjs",
+      "require": "./config.cjs"
+    }
+  },
+  "main": "./config.cjs"
+}
