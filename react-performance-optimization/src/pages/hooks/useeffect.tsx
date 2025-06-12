@@ -7,6 +7,9 @@ function Example1() {
   useEffect(() => {
     // 使用浏览器 API 更新网页标题
     document.title = `You clicked ${count} times`;
+    return ()=>{
+      console.log("close me");
+    }
   });
 
   return (

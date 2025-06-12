@@ -53,7 +53,7 @@ const server = http.createServer((req, res) => {
 });
 
 // 启动服务器
-const port = 3000;
+const port = 3003;
 server.listen(port, () => {
   console.log(`Server running on port ${port}`);
 });

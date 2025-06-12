@@ -66,7 +66,7 @@ function Example4() {
   const [num, setNum] = useState(1);
   // 利用state的函数式更新
   const addOne = useCallback(() => {
-    setNum((num) => num + 1);
+    setNum((x) => x + 1);
   }, []);
   (window as any).addOne = addOne;
   return (
