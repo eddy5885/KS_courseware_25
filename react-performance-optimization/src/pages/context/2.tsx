@@ -21,7 +21,8 @@ const ThemeProvider: React.FC<Iprops> = (props) => {
   };
   return (
     <ThemeContext.Provider value={{ theme, toggle }}>
-      {children}
+      <Comchildren1 />
+      <Comchildren2 /> {/* 这里由于state变化，子组件会重新渲染*/}
     </ThemeContext.Provider>
   );
 };
@@ -46,11 +47,10 @@ function Comchildren2() {
 }
 function App() {
   return (
-    <ThemeProvider>
-      <h1>Context 利用children防止子组件渲染</h1>
-      <Comchildren1 />
-      <Comchildren2 />
-    </ThemeProvider>
+    <>
+      <h1>Context 利用children防止子组件渲染 对比</h1>
+      <ThemeProvider />
+    </>
   );
 }
 

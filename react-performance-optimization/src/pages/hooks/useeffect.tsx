@@ -62,6 +62,7 @@ function Example3() {
   );
 }
 
+
 function Example4() {
   const [count, setCount] = useState(0);
 
@@ -96,7 +97,7 @@ export default () => {
       3:
       <Example3 />
       <hr />
-      4:
+      4:（注意和点击1和点击4的区别）
       {!close && <Example4 />}
       <button
         onClick={() => {

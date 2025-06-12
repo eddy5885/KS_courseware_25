@@ -28,6 +28,7 @@ class Toggle2 extends React.Component {
     this.state = { isToggleOn: true };
 
     // 为了在回调中使用 `this`，这个绑定是必不可少的
+    // https://www.smashingmagazine.com/2014/01/understanding-javascript-function-prototype-bind/
     this.handleClick = this.handleClick.bind(this);
   }
 

@@ -15,13 +15,14 @@ const Button3 = memo(Button2);
 
 function Example1() {
   const [num, setNum] = useState(1);
-
   // 每次渲染addOne 都是新的，Button3的props变化
+  console.time('Example1')
   const addOne = () => {
     setNum((num) => num + 1);
   };
   // debugger;
-  (window as any).addOne = addOne;
+  // (window as any).addOne = addOne;
+  console.timeEnd('Example1')
   return (
     <>
       <div>{num}</div>
@@ -32,13 +33,14 @@ function Example1() {
 
 function Example2() {
   const [num, setNum] = useState(1);
-
+  console.time('Example2')
   // 新手经常踩得坑
   const addOne = useCallback(() => {
     setNum(num + 1);
   }, []);
   // debugger;
-  (window as any).addOne = addOne;
+  // (window as any).addOne = addOne;
+  console.timeEnd('Example2')
   return (
     <>
       <div>{num}</div>

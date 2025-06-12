@@ -28,7 +28,6 @@ function Example1() {
 
 // 优化方式：const Button3 = memo(Button2);，但是要求Button3 组件的 props 不变
 const Button3 = memo(Button2);
-
 function Example2() {
   const [num, setNum] = useState(1);
 

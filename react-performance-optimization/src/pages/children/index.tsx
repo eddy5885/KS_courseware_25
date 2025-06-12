@@ -23,14 +23,14 @@ function A(props: any) {
   const [num, setNum] = useState(1);
   console.log("AAA");
   return (
-    <div>
-      <div
+    <div style={{ border: "1px solid red" }}>
+      <button
         onClick={() => {
           setNum(num + 1);
         }}
       >
         btn
-      </div>
+      </button>
       {num}
       {true ? props.children : "无权限访问"}
     </div>
@@ -41,14 +41,14 @@ function B(props: any) {
   console.log("BBB");
 
   return (
-    <div>
-      <div
+    <div style={{ border: "1px solid green",margin: "10px" }}>
+      <button
         onClick={() => {
           setNum(num + 1);
         }}
       >
         btn
-      </div>
+      </button>
       {num}
       {props.children}
     </div>
@@ -59,14 +59,14 @@ function C(props: any) {
   console.log("CCC");
 
   return (
-    <div>
-      <div
+    <div style={{ border: "1px solid blue",margin: "10px" }}>
+      <button
         onClick={() => {
           setNum(num + 1);
         }}
       >
         btn
-      </div>
+      </button>
       {num}
       {props.children}
     </div>

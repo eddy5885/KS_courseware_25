@@ -19,14 +19,36 @@ function Example1() {
   );
 }
 
+function Example2() {
+  const [count, setCount] = useState(0);
+
+  return (
+    <div>
+      <p>You clicked {count} times</p>
+      <button
+        onClick={() => {
+          console.log("setCount", count);
+          setCount(count + 1);
+          console.log("setCount", count); // 异步的，不能实施拿到值
+          setCount(count + 1);
+          console.log("setCount", count);
+          setCount(count + 1);
+        }}
+      >
+        Click me 3
+      </button>
+    </div>
+  );
+}
+
 function getInit() {
   const _Example3_ = localStorage.getItem("_Example3_") || "0";
   return parseInt(_Example3_);
 }
 
-function Example2() {
+function Example3() {
   // 声明一个叫 "count" 的 state 变量
-  const [count, setCount] = useState(getInit); //参数可以是函数
+  const [count, setCount] = useState(getInit); //参数可以是一个函数
 
   useEffect(() => {
     // const _Example3_ = localStorage.getItem("_Example3_") || "0";
@@ -43,15 +65,9 @@ function Example2() {
       <p>You clicked {count} times</p>
       <button
         onClick={() => {
-          // console.log('setCount', count)
-          // setCount(count + 1)
-          // console.log('setCount', count)
-          // setCount(count + 1)
-          // console.log('setCount', count)
-          // setCount(count + 1)
           setCount((count) => count + 1);
           setCount((count) => count + 1);
-          setCount((count) => count + 1); // 如何拿到上一次的值
+          setCount((count) => count + 1); // 状态更新函数的参数可以是一个函数
         }}
       >
         Click me 3
@@ -74,6 +90,8 @@ export default () => {
       <hr />
       2:
       <Example2 />
+      3:
+      <Example3 />
     </div>
   );
 };

@@ -3,8 +3,8 @@ import React, { useState } from "react";
 class Example1 extends React.Component {
   constructor(props) {
     super(props);
-    this.myRef = React.createRef();
-    console.log("this.myRef", this.myRef);
+    this.divRef = React.createRef();
+    console.log("this.divRef", this.divRef);
   }
   inputRef = React.createRef();
   childrenRef = React.createRef();
@@ -12,12 +12,12 @@ class Example1 extends React.Component {
     console.log("this.inputRef", this.inputRef);
     return (
       <>
-        <div ref={this.myRef}>hello,world!</div>
+        <div ref={this.divRef}>hello,world!</div>
         <input ref={this.inputRef} type="text" />
         <div>
           <button
             onClick={() => {
-              console.log("this.myRef:", this.myRef.current.innerHTML);
+              console.log("this.divRef:", this.divRef.current.innerHTML);
               console.log("this.inputRef:", this.inputRef.current.value);
               console.log(
                 "this.childrenRef:",

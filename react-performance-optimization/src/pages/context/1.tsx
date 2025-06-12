@@ -32,7 +32,7 @@ function Comchildren1() {
   return (
     <div>
       <h1>Context 使用</h1>
-      {/* <Comchildren2 /> */}
+      <Comchildren2 />
       <Comchildren3 />
     </div>
   );
