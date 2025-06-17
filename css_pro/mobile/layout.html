@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Layout</title>
+</head>
+<style>
+    * {
+        padding: 0;
+        margin: 0;
+    }
+
+    ul,
+    li {
+        list-style: none;
+        border: none;
+        padding: 0;
+        margin: 0;
+        box-sizing: border-box;
+    }
+
+    html {
+        font-size: 26.66667vw
+            /*(100*100/375);*/
+    }
+
+    body {
+        font-size: 16px;
+    }
+
+    ul {
+        display: flex;
+        flex-wrap: wrap;
+    }
+
+    li {
+        width: 33.3333%;
+        border: 1px solid #ccc;
+        text-align: center;
+        font-size: 0.16rem;
+    }
+
+    .main {
+        padding: 10px 20px;
+        /* 让拥有不同屏幕大小的终端设备拥有一致的 UI 界面 */
+        /* font-size: 0.16rem;  */
+        /* 让拥有更大屏幕的终端展示更多的内容*/
+        font-size: 16px;
+    }
+    h3 {
+        margin: 20px 0;
+    }
+    p {
+        line-height: 1.5;
+        margin-bottom: 10px;
+        text-indent: 2em; /* 段落首行缩进， 这里写相对单位 */
+    }
+</style>
+
+<body>
+    <div>
+        <ul>
+            <li>栏目一</li>
+            <li>栏目二</li>
+            <li>栏目三</li>
+            <li>栏目四</li>
+            <li>栏目五</li>
+            <li>栏目六</li>
+            <li>栏目七</li>
+            <li>栏目八</li>
+            <li>栏目九</li>
+        </ul>
+        <div class="main">
+            <h3>React Fiber 渲染机制</h3>
+            <p>
+                React Fiber 是 React 16 引入的全新渲染引擎，旨在解决 React 15 中的性能问题，特别是长时间阻塞主线程导致的用户体验不佳。
+            <p>
+                可中断的异步渲染：将渲染任务拆分为多个，拆分到每一帧里面， Fiber 节点（链表结构），通过循环而非递归遍历，支持暂停、恢复和优先级调度。
+            </p>
+            <p>
+                时间切片（Time Slicing） ：利用浏览器空闲时间（使用requestIdleCallBack实现，允许在浏览器空闲时执行传递进去的回调函数）分批处理任务，避免长时间占用主线程，有就渲染，没有就暂停。
+            </p>
+            <p>
+                优先级调度：高优先级任务（如用户交互）可打断低优先级任务（如数据渲染、网络请求），确保关键操作即时响应,React 的优先级调度由 Scheduler 模块 实现，核心是 过期时间（Expiration
+                Time） 和 优先级车道（Lane） 。
+            </p>
+            <p>
+                Scheduler 给每个更新任务赋予优先级优先级高的更新任务A，会被推入 Reconciler，VDOM 转 Fiber，然后和旧的 Fiber 进行 diff 对比决定怎样生成新的 Fiber 树
+                。但如果此时有新的更高优先级的更新任务B 进入 Scheduler，那么 A 就会被中断，B被推入 Reconciler，当 B 完成渲染后。新一轮的调度开始，A 是新一轮中优先级最高的，那 A 就继续推入
+                Reconciler 执行更新任务。重复以上的 可中断、可重复 步骤，直至所有更新任务完成渲染。分为render（Scheduler+Reconciler）和commit两个大的阶段。
+            </p>
+
+
+        </div>
+
+    </div>
+</body>
+
+</html>

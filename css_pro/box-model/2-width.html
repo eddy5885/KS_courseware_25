@@ -1,0 +1,57 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>宽度和高度</title>
+  </head>
+  <style>
+    /* 
+CSS 设置高度和宽度
+height 和 width 属性用于设置元素的高度和宽度。
+height 和 width 属性不包括内边距、边框或外边距。它设置的是元素内边距、边框以及外边距内的区域的高度或宽度。
+
+请记住，height 和 width 属性不包括内边距、边框或外边距！它们设置的是元素的内边距、边框和外边距内的区域的高度/宽度！
+
+不能对行内元素设置 height 和 width 属性。行内元素的高度和宽度由其内容决定。
+*/
+    div {
+      border: 1px solid #ccc;
+    }
+
+    .d1 {
+      width: 200px;
+    }
+    .d2 {
+      height: 200px;
+      width: 50%;
+      background-color: powderblue;
+    }
+    .d3 {
+      display: inline-block;
+      max-width: 600px;
+    }
+    .d31 {
+      display: inline-block;
+      width: 600px;
+    }
+    .d4 {
+      min-width: 550px;
+    }
+  </style>
+  <body>
+    <span class="d1">123</span>
+    <div class="d2">456</div>
+    <hr />
+    <div class="d3">请记住，height 和 width 属性</div>
+    <hr />
+    <div class="d31">请记住，height 和 width 属性</div>
+    <hr />
+    <div class="d4">
+      这个演示了 min-width 属性的使用。min-width 属性设置元素的最小宽度。
+    </div>
+    <div class="d41">
+      这个演示了 min-width 属性的使用。min-width 属性设置元素的最小宽度。
+    </div>
+  </body>
+</html>

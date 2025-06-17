@@ -1,0 +1,43 @@
+<!doctype html>
+<html>
+  <head>
+    <style>
+      div.relative1 {
+        position: relative;
+        width: 400px;
+        height: 200px;
+        border: 3px solid #73ad21;
+      }
+      div.relative2 {
+        position: relative;
+        margin: 10px;
+        height: 50%;
+        border: 1px solid #73ad21;
+      }
+
+      div.absolute {
+        position: absolute;
+        top: 80px;
+        right: 0;
+        width: 200px;
+        height: 100px;
+        border: 3px solid #73ad21;
+      }
+    </style>
+  </head>
+
+  <body>
+    <h2>position: absolute;</h2>
+
+    <p>
+      具有 position: absolute; 的元素；
+      相对于最近定位的祖先定位（而不是相对于视口定位，如 fixed）：
+    </p>
+
+    <div class="relative1">
+      <div class="relative2">
+        <div class="absolute">这个div元素有position: absolute;</div>
+      </div>
+    </div>
+  </body>
+</html>

@@ -1,0 +1,139 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>语法</title>
+  </head>
+  <style>
+    .d1,
+    .d2,
+    .d3 {
+      height: 60px;
+    }
+    .d1 {
+      background: red;
+    }
+    .d2 {
+      background: green;
+    }
+    .d3 {
+      background: blue;
+    }
+    .c1 {
+      display: flex;
+    }
+  </style>
+  <body>
+    <pre>正常</pre>
+    <div class="c1">
+      <div class="d1">这是一条语法demo</div>
+      <div class="d2">这是二条语法demo</div>
+      <div class="d3">这是三条语法demo</div>
+      <div class="d1">这是一条语法demo</div>
+      <div class="d2">这是二条语法demo</div>
+      <div class="d3">这是三条语法demo</div>
+      <div class="d1">这是一条语法demo</div>
+      <div class="d2">这是二条语法demo</div>
+      <div class="d3">这是三条语法demo</div>
+      <div class="d1">这是一条语法demo</div>
+      <div class="d2">这是二条语法demo</div>
+      <div class="d3">这是三条语法demo</div>
+    </div>
+    <pre>order</pre>
+    <div class="c1">
+      <div class="d1">这是一条语法demo</div>
+      <div class="d2" style="order: 3">这是二条语法demo</div>
+      <div class="d3" style="order: 2">这是三条语法demo</div>
+      <div class="d1">这是一条语法demo</div>
+      <div class="d2">这是二条语法demo</div>
+      <div class="d3">这是三条语法demo</div>
+      <div class="d1">这是一条语法demo</div>
+      <div class="d2">这是二条语法demo</div>
+      <div class="d3">这是三条语法demo</div>
+      <div class="d1">这是一条语法demo</div>
+      <div class="d2">这是二条语法demo</div>
+      <div class="d3">这是三条语法demo</div>
+    </div>
+    <pre>flex-grow：默认值是 0</pre>
+    <div class="c1">
+      <div class="d1" style="flex-grow: 1">这是一条语法demo</div>
+      <div class="d2">这是二条语法demo</div>
+      <div class="d3">这是三条语法demo</div>
+      <div class="d1">这是一条语法demo</div>
+      <div class="d2">这是二条语法demo</div>
+      <div class="d3">这是三条语法demo</div>
+      <div class="d1">这是一条语法demo</div>
+      <div class="d2">这是二条语法demo</div>
+      <div class="d3">这是三条语法demo</div>
+      <div class="d1">这是一条语法demo</div>
+      <div class="d2">这是二条语法demo</div>
+      <div class="d3">这是三条语法demo</div>
+    </div>
+    <pre>flex-shrink：默认值是 1</pre>
+    <div class="c1">
+      <div class="d1" style="flex-shrink: 0">这是一条语法demo</div>
+      <div class="d2">这是二条语法demo</div>
+      <div class="d3">这是三条语法demo</div>
+      <div class="d1">这是一条语法demo</div>
+      <div class="d2">这是二条语法demo</div>
+      <div class="d3">这是三条语法demo</div>
+      <div class="d1">这是一条语法demo</div>
+      <div class="d2">这是二条语法demo</div>
+      <div class="d3">这是三条语法demo</div>
+      <div class="d1">这是一条语法demo</div>
+      <div class="d2">这是二条语法demo</div>
+      <div class="d3">这是三条语法demo</div>
+    </div>
+    <pre>flex-basis：将第三个弹性项目的初始长度设置为 200 像素:</pre>
+    <div class="c1">
+      <div class="d1" style="flex-basis: 300px">这是一条语法demo</div>
+      <div class="d2">这是二条语法demo</div>
+      <div class="d3">这是三条语法demo</div>
+      <div class="d1">这是一条语法demo</div>
+      <div class="d2">这是二条语法demo</div>
+      <div class="d3">这是三条语法demo</div>
+      <div class="d1">这是一条语法demo</div>
+      <div class="d2">这是二条语法demo</div>
+      <div class="d3">这是三条语法demo</div>
+      <div class="d1">这是一条语法demo</div>
+      <div class="d2">这是二条语法demo</div>
+      <div class="d3">这是三条语法demo</div>
+    </div>
+    <pre>
+flex：flex 属性是 flex-grow、flex-shrink 和 flex-basis 属性的简写属性。</pre
+    >
+    <div class="c1">
+      <div class="d1" style="flex: 0 0 300px">这是一条语法demo</div>
+      <div class="d2">这是二条语法demo</div>
+      <div class="d3">这是三条语法demo</div>
+      <div class="d1">这是一条语法demo</div>
+      <div class="d2">这是二条语法demo</div>
+      <div class="d3">这是三条语法demo</div>
+      <div class="d1">这是一条语法demo</div>
+      <div class="d2">这是二条语法demo</div>
+      <div class="d3">这是三条语法demo</div>
+      <div class="d1">这是一条语法demo</div>
+      <div class="d2">这是二条语法demo</div>
+      <div class="d3">这是三条语法demo</div>
+    </div>
+    <pre>align-self：覆盖容器的 align-items 属性所设置的默认对齐方式</pre>
+    <div
+      class="c1"
+      style="height: 100px; border: 1px solid #ccc; align-items: center"
+    >
+      <div class="d1" style="align-self: flex-end">这是一条语法demo</div>
+      <div class="d2">这是二条语法demo</div>
+      <div class="d3">这是三条语法demo</div>
+      <div class="d1">这是一条语法demo</div>
+      <div class="d2">这是二条语法demo</div>
+      <div class="d3">这是三条语法demo</div>
+      <div class="d1">这是一条语法demo</div>
+      <div class="d2">这是二条语法demo</div>
+      <div class="d3">这是三条语法demo</div>
+      <div class="d1">这是一条语法demo</div>
+      <div class="d2">这是二条语法demo</div>
+      <div class="d3">这是三条语法demo</div>
+    </div>
+  </body>
+</html>

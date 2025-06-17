@@ -1,0 +1,100 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>语法</title>
+  </head>
+  <style>
+    .d1,
+    .d2,
+    .d3 {
+      height: 60px;
+    }
+    .d1 {
+      background: red;
+    }
+    .d2 {
+      background: green;
+    }
+    .d3 {
+      background: blue;
+    }
+    .c2 {
+      display: flex;
+    }
+    .c3 {
+      display: flex;
+      flex-wrap: wrap;
+    }
+    .c4 {
+      display: flex;
+      height: 300px;
+      border: 1px solid #ccc;
+      flex-wrap: wrap;
+      justify-content: space-around;
+    }
+    .c5 {
+      height: 300px;
+      border: 1px solid #ccc;
+      display: flex;
+      flex-wrap: wrap;
+      align-items: center;
+    }
+    .c6 {
+      height: 300px;
+      border: 1px solid #ccc;
+      display: flex;
+      flex-wrap: wrap;
+      align-content: flex-end;
+    }
+  </style>
+  <body>
+    <pre>正常</pre>
+    <div class="c1">
+      <div class="d1"></div>
+      <div class="d2"></div>
+      <div class="d3"></div>
+    </div>
+    <pre>flex</pre>
+    <div class="c2">
+      <div class="d1">这是一条语法demo</div>
+      <div class="d2">这是二条语法demo</div>
+      <div class="d3">这是三条语法demo</div>
+    </div>
+    <pre>flex-wrap</pre>
+    <div class="c3">
+      <div class="d1">这是一条语法demo</div>
+      <div class="d2">这是二条语法demo</div>
+      <div class="d3">这是三条语法demo</div>
+    </div>
+    <pre>justify-content</pre>
+
+    <div class="c4">
+      <div class="d1">这是一条语法demo</div>
+      <div class="d2">这是二条语法demo</div>
+      <div class="d3">这是三条语法demo</div>
+    </div>
+    <pre>align-items</pre>
+    <div class="c5">
+      <div class="d1">这是一条语法demo</div>
+      <div class="d2">这是二条语法demo</div>
+      <div class="d3">这是三条语法demo</div>
+    </div>
+    <pre>align-content</pre>
+    <div class="c6">
+      <div class="d1">这是一条语法demo</div>
+      <div class="d2">这是二条语法demo</div>
+      <div class="d3">这是三条语法demo</div>
+      <div class="d1">这是一条语法demo</div>
+      <div class="d2">这是二条语法demo</div>
+      <div class="d3">这是三条语法demo</div>
+      <div class="d1">这是一条语法demo</div>
+      <div class="d2">这是二条语法demo</div>
+      <div class="d3">这是三条语法demo</div>
+      <div class="d1">这是一条语法demo</div>
+      <div class="d2">这是二条语法demo</div>
+      <div class="d3">这是三条语法demo</div>
+    </div>
+  </body>
+</html>

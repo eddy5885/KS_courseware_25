@@ -1,0 +1,59 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>box</title>
+  </head>
+  <style>
+    /* 
+    所有 HTML 元素都可以视为方框。在 CSS 中，在谈论设计和布局时，会使用术语"盒模型"或"框模型"。
+
+    CSS 框模型实质上是一个包围每个 HTML 元素的框。它包括:外边距、边框、内边距以及实际的内容。下图展示了框模型:
+
+*/
+    .container {
+      border: 1px solid black; /* 边框 */
+    }
+    .box {
+      /* width: 200px; */
+      height: 100px;
+      background-color: lightblue;
+      border: 10px solid blue; /* 边框 */
+      padding: 20px; /* 内边距 */
+      margin: 30px; /* 外边距 */
+    }
+  </style>
+  <body>
+    <img width="500" src="./img/longshot20250603150828.png" alt="" />
+    <pre>
+对不同部分的说明:
+
+Content - 框的内容。
+Padding - 内边距的区域，内边距是透明的。
+Border - 边框。
+Margin - 边界外的区域。外边距是透明的。
+
+重要事项: 设置元素的 width 和 height 属性时，只需设置内容区域的宽度和高度。要计算元素的完整大小，还必须把内边距、边框和外边距加起来。
+
+
+    </pre>
+    <hr />
+    <div class="container">
+      <div class="box">盒子</div>
+    </div>
+
+    <pre>
+假如有这样一个div：
+div {
+  width: 320px;
+  padding: 10px;
+  border: 5px solid gray;
+  margin: 0;
+} 
+元素总宽度 = 宽度 + 左内边距 + 右内边距 + 左边框 + 右边框 + 左外边距 + 右外边距
+350px = 320px(宽度) + 20px（左+右内边距） + 10px（左+右边框） + 0px（左+右外边距）
+
+    </pre>
+  </body>
+</html>

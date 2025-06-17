@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<style>
+    *{
+        padding: 0;
+        margin: 0;
+    }
+    html {
+        font-size: 16px;
+    }
+    .w-250px {
+        width: 250rem;
+        height: 100px;
+        background-color: rgb(209, 255, 240);
+    }
+    .full {
+        width: 375rem;
+        height: 100px;
+        background-color: rgb(195, 200, 199);
+    }
+</style>
+<body>
+<div class="w-250px"></div>
+<div class="full"></div>
+</body>
+<script>
+    function setRem() {
+        // 当前页面宽度相对于 375 宽的缩放比例，可根据自己需要修改
+        const scale = document.documentElement.clientWidth /375;
+        document.documentElement.style.fontSize = scale + 'px';
+    }
+    setRem();
+    window.onresize = setRem;
+</script>
+</html>

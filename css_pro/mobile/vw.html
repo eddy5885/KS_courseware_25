@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Layout</title>
+</head>
+<style>
+    *{
+        padding: 0;
+        margin: 0;
+    }
+    /* 
+    375px   250px的一个盒子，如何显示？
+
+    375px 100vw
+    100px  ?
+    */
+
+    html {
+        font-size: 26.66667vw /*(100*100/375);*/
+    } 
+    body {
+        font-size: 16px;
+    }
+    .main {
+        width: 2.5rem;
+    }
+    .w-250px {
+        width: 2.50rem;
+        height: 100px;
+        background-color: rgb(209, 255, 240);
+    }
+    .full {
+        width: 3.75rem;
+        height: 100px;
+        background-color: rgb(195, 200, 199);
+    }
+</style>
+<body>
+    <div>
+        <div class="main">
+123
+        </div>
+<div class="w-250px"></div>
+<div class="full"></div>
+    </div>
+</body>
+</html>

@@ -1,0 +1,58 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>选择器</title>
+  </head>
+  <style>
+    /* 
+# 块级元素（block element）
+块级元素总是从新行开始，并占据可用的全部宽度（尽可能向左和向右伸展）。
+块级元素的一些例子:
+<div>
+<h1> - <h6>
+<p>
+<form>
+<header>
+<footer>
+<section>
+
+# 行内元素（inline element）
+内联元素不从新行开始，仅占用所需的宽度。
+<span>
+<a>
+<img>
+
+# 每个元素都有一个默认 display 值。但是，您可以覆盖它。
+
+
+# display: inline 
+与 display: inline 相比，主要区别在于 display: inline-block 允许在元素上设置宽度和高度。
+
+
+   */
+    .inline {
+      display: inline-block;
+      width: 100px;
+      height: 50px;
+      background-color: lightblue;
+      margin: 5px;
+      text-align: center;
+    }
+  </style>
+  <body>
+    <div>这是块级元素</div>
+    <p>这是块级元素</p>
+    <hr />
+    <span>这是行内元素</span><a href="">这是行内元素</a><span>行内</span
+    ><img
+      src="//volcengine-kdocs-cache.wpscdn.cn/kdocs/img/logo.5c78b00f.svg"
+      alt=""
+    />
+    <hr />
+    <div class="inline">inline</div>
+    <div class="inline">inline</div>
+    <div class="inline">inline</div>
+  </body>
+</html>

@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>float1</title>
+</head>
+<style>
+    html,body{
+        margin: 0;
+        padding: 0;
+    }
+    ul,li{
+        border: none;
+        padding: 0;
+        margin: 0;
+        list-style: none;
+    }
+    .topbar{
+        box-sizing: border-box;
+        border: 1px solid #ccc;
+        height: 50px;
+    }
+    .banner {
+        box-sizing: border-box;
+        border: 1px solid #ccc;
+        height: 100px;
+    }
+    ul.nav{
+        overflow: hidden;
+    }
+    ul.nav li{
+        float: left;
+        box-sizing: border-box;
+        border: 1px solid #ccc;
+        width: 20%;
+        text-align: center;
+    }
+    .main::after {
+        /* overflow: hidden; */
+        content: "";
+        clear: both;
+        display: block;
+    }
+    .item{
+        height: 200px;
+        box-sizing: border-box;
+        border: 1px solid #ccc;
+        float: left;
+        width: 50%;
+    }
+</style>
+<body>
+<div class="container">
+    <div class="topbar">
+    111
+    </div>
+    <div class="banner">
+    222
+    </div>
+    <ul class="nav">
+        <li>上新精选</li>
+        <li>小米众筹</li>
+        <li>有品秒杀</li>
+        <li>生活优选</li>
+        <li>小米自营</li>
+    </ul>
+    <div class="main">
+        <div class="item"></div>
+        <div class="item"></div>
+        <div class="item"></div>
+        <div class="item"></div>
+        <div class="item"></div>
+        <div class="item"></div>
+        <div class="item"></div>
+        <div class="item"></div>
+    </div>
+</div>
+</body>
+</html>

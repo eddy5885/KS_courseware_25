@@ -1,0 +1,43 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>选择器</title>
+  </head>
+  <style>
+    
+    .div1 {
+      width: 300px;
+      height: 100px;
+      padding: 50px;
+      border: 1px solid blue;
+      box-sizing: border-box;
+    }
+
+    .div2 {
+      width: 300px;
+      height: 100px;
+      padding: 50px;
+      border: 1px solid red;
+    }
+  </style>
+  <body>
+    <pre>
+假如不指定 CSS box-sizing 属性
+默认情况下，元素的宽度和高度是这样计算的:
+
+width + padding + border = 元素的实际宽度
+height + padding + border = 元素的实际高度
+这意味着:当您设置元素的宽度/高度时，该元素通常看起来比您设置的更大（因为元素的边框和内边距已被添加到元素的指定宽度/高度中）。
+
+box-sizing 属性解决了这个问题：
+box-sizing 属性允许我们在元素的总宽度和高度中包括内边距和边框。
+如果在元素上设置了 box-sizing: border-box;，则宽度和高度会包括内边距和边框。
+</pre
+    >
+
+    <div class="div1"></div>
+    <div class="div2"></div>
+  </body>
+</html>

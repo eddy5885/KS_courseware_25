@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Flex</title>
+</head>
+<style>
+    body {
+        margin: 1px;
+        padding: 0;
+    }
+
+    .container {
+        width: 100%;
+        border: 1px solid #000;
+        height: 100vh;
+        display: flex;
+        flex-direction: column;
+        min-width: 1000px;
+    }
+
+    header {
+        background-color: #f1c40f;
+        height: 100px;
+    }
+
+    main {
+        background-color: green;
+        flex-grow: 1;
+        display: flex;
+    }
+
+    footer {
+        background-color: blue;
+        height: 40px;
+    }
+
+    .left {
+        background-color: red;
+        width: 200px;
+        flex-grow: 0;
+        flex-shrink: 0;
+        height: 100%;
+        display: flex;
+        flex-direction: column;
+        justify-content: flex-end;
+    }
+    .center {
+        background-color: aqua;
+        flex-grow: 1;
+        display: flex;
+        flex-direction: column;
+    }
+    .center_top {
+        display: flex;
+        height: 50px;
+        background-color: #f39c12;
+        align-items: center;
+        justify-content: space-between;
+        padding: 0 10px;
+    }
+    .right {
+        background-color: #988d60;
+        width: 120px;
+    }
+    @media screen and (max-width: 1100px) {
+        .right {
+            display: none;
+        }
+    }
+</style>
+
+<body>
+
+    <div class="container">
+        <header></header>
+        <main>
+            <div class="left">
+            </div>
+            <div class="center">
+                <div class="center_top">
+                    <div class="bishi">
+                        <label for="笔试名称">笔试名称：<input type="text"></label>
+                        <label for="技术方向">技术方向:<select>
+                            <option value="web">前端</option>
+                            <option value="server">服务端</option>
+                        </select></label>
+                    </div>
+                    <div class="op">
+                        <button>操作一</button>
+                        <button>操作二</button>
+                    </div>
+                </div>
+            </div>
+            <div class="right"></div>
+        </main>
+        <footer></footer>
+    </div>
+</body>
+</html>

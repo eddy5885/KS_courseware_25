@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>display</title>
+</head>
+<style>
+    body {
+        margin: 0;
+
+    }
+    div {
+        box-sizing: border-box;
+        border: 1px solid #ccc;
+    }
+    .container {
+        display: flex;
+        flex-direction: column;
+        height: 100vh;
+    }
+    .main{
+        flex-grow: 1;
+        overflow: auto;
+    }
+    .menu {
+        flex-basis: 40px;
+        flex-grow: 0;
+        flex-shrink: 0;
+        display: flex;
+    }
+    .menu div{
+        width: 25%;
+        text-align: center;
+        line-height: 40px;
+    }
+    
+</style>
+<body>
+    <div class="container">
+        <div class="main">
+            <div style="height: 2000px;">123</div>
+        </div>
+        <div class="menu">
+            <div>首页</div>
+            <div>个人中心</div>
+            <div>我的</div>
+            <div>设置</div>
+        </div>
+    </div> 
+</body>
+</html>

@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>float1</title>
+</head>
+<style>
+    html,body{
+        margin: 0;
+        padding: 0;
+    }
+    .container {
+        /* height: 100vh; */
+        min-width: 800px;
+        overflow: auto;
+    }
+    .leftbar{
+        width:200px;
+        box-sizing: border-box;
+        border: 1px solid #ccc;
+        height: 100vh;
+        float: left;
+    }
+    .main{
+        box-sizing: border-box;
+        border: 1px solid #ccc;
+        height: 100vh;
+        width: calc(100vw - 200px);
+        min-width: 600px;
+        float: left;
+        overflow: auto;
+
+    }
+</style>
+<body>
+<div class="container">
+    <div class="leftbar">
+111
+    </div>
+    <div class="main">
+222
+    </div>
+</div>
+</body>
+</html>
