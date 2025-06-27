@@ -15,7 +15,8 @@
     "class-variance-authority": "^0.7.1",
     "core-js": "^3.42.0",
     "tailwind-merge": "^3.2.0",
-    "umi": "^4.4.6"
+    "umi": "^4.4.6",
+    "zustand": "^5.0.6"
   },
   "devDependencies": {
     "@types/react": "^18.0.33",
