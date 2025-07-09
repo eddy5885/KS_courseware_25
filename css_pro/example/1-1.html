@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<style>
+    * {
+        padding: 0;
+        margin: 0;
+        list-style: none;
+    }
+    .container{
+        display: flex;
+        flex-direction: column;
+    }
+    .main{
+        background: #f1f1f1;
+        /* 高度填满内容使用的flex-grow属性 */
+        flex-grow: 1;
+    }
+    .container {
+        height: 100%;
+    }
+    .footer{
+        background: #ccc;
+        height: 80px;
+        flex-grow: 0;
+    }
+    body {
+        font-size: 16px; /* 设置基础字体大小 */
+        height: 100vh;
+    }
+    ul {
+        display: flex;
+        justify-content: space-around;
+        align-items: center;
+        height: 100%;
+    }
+    li {
+        flex-grow: 1;
+        text-align: center;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+</style>
+<body>
+    <div class="container">
+        <div class="main">
+1
+        </div>
+        <div class="footer">
+<ul>
+    <li>1</li>
+    <li>2</li>
+    <li>3</li>
+    <li>4</li>
+</ul>
+        </div>
+    </div>
+</body>
+</html>

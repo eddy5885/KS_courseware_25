@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<style>
+    * {
+        padding: 0;
+        margin: 0;
+        list-style: none;
+    }
+    .footer {
+        position: fixed;
+        left: 0;
+        right: 0;
+        bottom: 0;
+        height: 60px;
+        background: #ccc;
+        /* ul li可使用浮动 */
+        ul {
+            display: flex;
+            justify-content: space-around;
+            align-items: center;
+            height: 100%;
+        }
+    }
+    .main {
+        /* 高度要固定，不然撑不起页面，设置背景的时候有差异 */
+        height: calc(100vh - 60px);
+    }
+    
+</style>
+<body>
+    <div class="container">
+        <div class="main">
+内容
+        </div>
+        <div class="footer">
+<ul>
+    <li>微信</li>
+    <li>通讯录</li>
+    <li>发现</li>
+    <li>我</li>
+</ul>
+        </div>
+    </div>
+</body>
+</html>

@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Layout</title>
+    <style>
+@media screen and (min-width: 320px) and (max-width: 374px) {
+  html { font-size: 20px; }
+  .box {display:none;}
+}
+@media screen and (min-width: 375px) and (max-width: 413px) {
+  html { font-size: 24px; }
+  .box {display:none;}
+}
+@media screen and (min-width: 414px) and (max-width: 479px) {
+  html { font-size: 28px; }
+}
+@media screen and (min-width: 480px) {
+  html { font-size: 32px; }
+}
+
+        .box {
+            width: 5rem;
+            height: 5rem;
+            font-size: 1rem;
+            background-color: blue;
+        }
+    </style>
+</head>
+<body>
+    <div class="box">
+        这是一个盒子
+    </div>
+</body>
+</html>

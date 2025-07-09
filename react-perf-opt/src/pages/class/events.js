@@ -8,7 +8,7 @@ class classA {
   }
   cache2 = {};
   handleClick() {
-    
+    console.log('this is handleClick',this);
   }
   handleClick2 = () => {
 

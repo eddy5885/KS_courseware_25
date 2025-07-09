@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>display</title>
+</head>
+<style>
+    body {
+        margin: 0;
+
+    }
+    div {
+        box-sizing: border-box;
+        border: 1px solid #ccc;
+    }
+    .nav-container {
+    display: flex;
+    justify-content: space-around; /* 元素等间距排列 */
+    padding: 10px 0;
+    }
+    .nav-item {
+    flex: 1 1 20%; /* flex-grow:1, flex-shrink:1, flex-basis:20% */
+    min-width: 80px; /* 防止过小屏幕元素挤压 */
+    text-align: center;
+    }
+    /* 超小屏幕优化 */
+    @media (max-width: 320px) {
+    .nav-container {
+    flex-wrap: wrap; /* 小屏幕自动换行 */
+    }
+    .nav-item { flex-basis: 40%; }
+    }
+    
+</style>
+<body>
+    <div class="nav-container">
+        <div class="nav-item">
+            123
+        </div>
+        <div class="menu">
+            防止过小屏幕元素挤压，防止过小屏幕元素挤压，防止过小屏幕元素挤压，防止过小屏幕元素挤压，防止过小屏幕元素挤压，防止过小屏幕元素挤压，防止过小屏幕元素挤压，防止过小屏幕元素挤压，
+        </div>
+    </div> 
+</body>
+</html>

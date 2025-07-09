@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>display</title>
+</head>
+<style>
+    body {
+        margin: 0;
+
+    }
+    div {
+        box-sizing: border-box;
+        /* border: 1px solid #ccc; */
+    }
+    .form-row {
+        display: flex;
+        margin-bottom: 15px;
+    }
+    .form-label {
+        flex: 0 0 80px; /* 固定标签宽度80px */
+        padding-right: 10px;
+        text-align: right;
+    }
+    .form-input {
+        flex: 1; /* 输入框占据剩余空间 */
+        min-width: 0; /* 解决iOS下flex元素溢出问题 */
+    }
+    /* 小屏幕标签换行 */
+    @media (max-width: 480px) {
+    .form-row { flex-direction: column; }
+    .form-label {
+        flex: 0 0 auto;
+        text-align: left;
+        padding-right: 0;
+        margin-bottom: 5px;
+    }
+    }
+    
+</style>
+<body>
+    <div class="form-row">
+        <div class="form-row">
+            <div class="form-label">姓名：</div>
+            <div class="form-input"><input type="text"></div>
+        </div>
+        <div class="form-row">
+            <div class="form-label">学校：</div>
+            <div class="form-input"><input type="text"></div>
+        </div>
+    </div> 
+</body>
+</html>

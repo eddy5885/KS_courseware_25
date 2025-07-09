@@ -14,38 +14,34 @@
         box-sizing: border-box;
         border: 1px solid #ccc;
     }
-    .container {
-        display: flex;
-        flex-direction: column;
-        height: 100vh;
+    .main {
+        height: calc(100vh - 44px);
     }
-    .main{
-        flex-grow: 1;
-        overflow: auto;
-    }
-    .menu {
-        flex-basis: 40px;
-        flex-grow: 0;
-        flex-shrink: 0;
-        display: flex;
+    .menu{
+        position: fixed;
+        bottom: 0;
+        left: 0;
+        right: 0;
+        overflow: hidden;
     }
     .menu div{
-        width: 25%;
+        width: 33.3%;
         text-align: center;
         line-height: 40px;
+        background: #f1f1f1;
+        float: left;
     }
     
 </style>
 <body>
     <div class="container">
         <div class="main">
-            <div style="height: 2000px;">123</div>
+            123
         </div>
         <div class="menu">
             <div>首页</div>
             <div>个人中心</div>
             <div>我的</div>
-            <div>设置</div>
         </div>
     </div> 
 </body>
