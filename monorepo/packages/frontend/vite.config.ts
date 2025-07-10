@@ -6,11 +6,11 @@ export default defineConfig({
   plugins: [react()],
   server: {
     host: "0.0.0.0",
-    // proxy: {
-    //   '/api': {
-    //     target: 'http://127.0.0.1:50001',
-    //     changeOrigin: true
-    //   }
-    // }
+    proxy: {
+      '/api': {
+        target: 'http://127.0.0.1:50001',
+        changeOrigin: true
+      }
+    }
   },
 });
