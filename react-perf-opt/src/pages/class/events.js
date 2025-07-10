@@ -11,6 +11,7 @@ class classA {
     console.log('this is handleClick',this);
   }
   handleClick2 = () => {
+    console.log('this is handleClick2',this);
 
   };
   render() {
@@ -19,4 +20,14 @@ class classA {
 }
 
 const A = new classA();
-console.log(A)
+const f1 = A.handleClick
+const f2 = A.handleClick2
+const f3 = A.handleClick3
+
+console.log(f1())
+console.log('____')
+console.log(f2())
+console.log('____')
+console.log(f3())
+
+

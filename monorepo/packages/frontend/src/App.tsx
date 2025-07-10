@@ -43,7 +43,7 @@ function App() {
       <p className="read-the-docs">
         Click on the Vite and React logos to learn more
       </p>
-      <h2>配置内容：</h2>
+      <h2>前端配置内容：</h2>
       <pre>{JSON.stringify(config, null, 2)}</pre>
       <h2>IQprice</h2>
       <div>{config.iqprice}</div>
